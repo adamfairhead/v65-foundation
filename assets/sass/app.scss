@@ -2,15 +2,23 @@
 @import "foundation";
 @import "vin65";
 
+/* Sassy */
+
 @mixin ir {
   text-align: left;
   text-indent: -999em;
   display: block;
 }
 
+
+/* Header */
+
 .page-header {
   padding: 20px 0;
 }
+
+
+/* Navigation */
 
 .navlink {
   @include ir;
@@ -29,4 +37,12 @@
   position: absolute;
   top: 12px;
   width: 100%;
+  text-align: right;
+}
+
+
+/* Page Footer */
+
+.page-footer {
+  font-size: .8em;
 }

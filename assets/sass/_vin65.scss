@@ -7,3 +7,87 @@
 #user-tools {
   text-align: right;
 }
+
+.nav-bar .v65-home {
+  display: none;
+}
+
+img.v65-featureLeft,
+img.v65-featureRight {
+  padding: 0;
+  border: none;
+}
+
+@media only screen and (max-width: 48em) {
+  img.v65-featureLeft,
+  img.v65-featureRight {
+    float: none;
+    margin: 0 auto 1em;
+    clear: both;
+    display: block;
+  }
+}
+
+.v65-formLeft,
+.v65-formRight {
+  clear: both;
+  float: none;
+  margin: 0;
+  width: 100%;
+}
+
+.v65-form input[type="text"], 
+.v65-form input[type="password"],
+.v65-form textarea,
+.v65-form select {
+  width: 100%;
+}
+
+.v65-clubTeaser {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.v65-calendarList-Event {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+ol li {
+  margin-bottom: 1em;
+}
+
+.v65-product-photo,
+.v65-product-relatedProducts-product {
+  text-align: left;
+}
+
+.v65-recipe-drilldown-related-products,
+.v65-paging {
+  border: none;
+  margin: 0;
+}
+
+.v65-product-addToCart-quantity input {
+  width: 30px !important;
+}
+
+.v65-product-addToCart-quantity,
+.v65-product-addToCart-quantity input {
+  display: inline;
+}
+
+.v65-recipe-attributeLabel,
+.v65-recipe-attributeValue {
+  float: none;
+  width: 100%;
+  text-align: left;
+  margin-bottom: .3em;
+}
+
+.v65-product-socialBar,
+.v65-product-drilldownLink,
+.v65-product-reviewStats {
+  display: none;
+}
