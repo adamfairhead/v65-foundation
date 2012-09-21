@@ -64,7 +64,10 @@ ol li {
 }
 
 .v65-recipe-drilldown-related-products,
-.v65-paging {
+.v65-paging,
+#v65-PagingBottom,
+#v65-PagingTop,
+.v65-blogPostWrapper {
   border: none;
   margin: 0;
 }
@@ -87,7 +90,20 @@ ol li {
 }
 
 .v65-product-socialBar,
+.v65-socialMediaBar,
 .v65-product-drilldownLink,
 .v65-product-reviewStats {
   display: none;
+}
+
+fieldset {
+  padding-bottom: 15px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  padding: 9px 10px;
 }

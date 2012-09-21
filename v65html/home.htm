@@ -16,7 +16,7 @@
   <!--//Vin65 QuickLaunch//-->
   <script type="text/javascript">
     var qlCode='vin65template1:vin65cloud';
-    var qlLayoutType='Blog';
+    var qlLayoutType='Homepage';
   </script>
   <script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
   <!--//Vin65 QuickLaunch//-->
@@ -37,7 +37,7 @@
 	<![endif]-->
 
 </head>
-<body class="blog">
+<body class="home">
 
   <header class="page-header">
   
@@ -66,40 +66,16 @@
   <div class="page-main">
   
     <div class="row">
-      <div class="eight columns">
-        <div class="breadcrumb-container">
-          <v65:breadCrumbs></v65:breadCrumbs>
-        </div>
-        
+      <div class="twelve columns">
         <article class="page-article">
+          <header><h1><v65:pageTitle></v65:pageTitle></h1></header>
           <v65:mainContent></v65:mainContent>
         </article>
-        <hr class="show-for-small" />
+        
+        <ul class="pods block-grid four-up mobile">
+          <v65:pods location="Homepage" type="image,title,description"></v65:pods>
+        </ul>
       </div>
-      
-      <div class="four columns sidebar">
-        <div class="panel">
-          <h5>Recent Posts</h5>
-  				<v65:blogRecentPosts maxrows="10"></v65:blogRecentPosts>
-  			</div>
-  			
-  			<div class="panel">
-  			  <h5>Blog Categories</h5>
-  			  <v65:blogCategories></v65:blogCategories>
-  			</div>
-  			
-  			<div class="panel">
-  			  <h5>Blog Archives</h5>
-  			  <v65:blogArchives></v65:blogArchives>
-  			</div>
-  			
-  			<div class="panel">
-  			  <h5>Our Writers</h5>
-  			  <v65:blogAuthors></v65:blogAuthors>
-  			</div>
-      </div>
-    </div>
-    
   </div>
   
   <footer class="page-footer">
