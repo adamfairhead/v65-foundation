@@ -1,7 +1,24 @@
+h1 {
+    margin-top: 0;
+}
+
 #v65-modalCart {
   position: inherit;
   float: right;
   margin-left: 20px;
+}
+
+.small-top {
+    padding: 7px 0;
+    background: $bodyFontColor;
+    & #v65-modalCart {
+        float: inherit;
+        margin: 15px 0 0;
+        color: $white;
+        & a {
+            color: $white;
+        }
+    }
 }
 
 #user-tools {
@@ -10,6 +27,10 @@
 
 .nav-bar .v65-home {
   display: none;
+}
+
+a img {
+    border: none;
 }
 
 img.v65-featureLeft,
@@ -36,11 +57,16 @@ img.v65-featureRight {
   width: 100%;
 }
 
-.v65-form input[type="text"], 
-.v65-form input[type="password"],
-.v65-form textarea,
-.v65-form select {
+input[type="text"], 
+input[type="password"],
+textarea,
+select {
   width: 100%;
+  max-width: 250px;
+}
+
+select {
+  max-width: 130px;
 }
 
 .v65-clubTeaser {
@@ -107,3 +133,73 @@ table {
 th {
   padding: 9px 10px;
 }
+
+.v65-product-pagination li {
+  list-style: none;
+  display: inline;
+}
+
+.club-creditcard div:first-child,
+select,
+.billing-info div:first-child,
+.username-password div:first-child {
+  margin-bottom: 15px;
+}
+
+
+/* Cart */
+
+@media only screen and (max-width: 47.999em) {
+  .logo {
+    text-align: center;
+    display: block;
+  }
+  
+  .footer-legal {
+    text-align: center;
+  }
+  
+  .page-footer .link-list {
+    text-align: center;
+    
+    & li,
+    & li a {
+        float: none;
+    display: inline;
+    }
+  }
+
+  .cart-header .checkout {
+    display: none;
+  }
+  
+  .cart td {
+    padding: 3px;
+    word-wrap: break-word;
+  } 
+  
+  .cart tr td:nth-child(4),
+  .cart tr:nth-child(1) .center,
+  .cart tr td:nth-child(2),
+  .cart tr:nth-child(1) .right {
+    display: none;
+  }
+  
+  .cart tr:nth-child(1) td:nth-child(4),
+  .cart tr:nth-child(1) td:nth-child(2) {
+    display: inherit;
+  }
+}
+
+
+/* Product */
+
+  .v65-addToCart {
+    & .v65-product-addToCart-priceWrapper div,
+    & .v65-product-addToCart-priceWrapper,
+    & input,
+    & .v65-product-addToCart-button {
+      display: inline;
+      margin-right: .5em;
+    }
+  }

@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="eight columns push-four">
+        <h1><v65:product:title></v65:product:title></h1>
+        <v65:product:teaser></v65:product:teaser>
+        
+        <v65:product:availability></v65:product:availability>
+        <v65:product:addToCart></v65:product:addToCart>
+        
+        <div class="panel right">
+            <v65:product:shipDate></v65:product:shipDate>
+            <v65:product:actionMessage></v65:product:actionMessage>
+            <v65:product:inCompliantStateMessage></v65:product:inCompliantStateMessage>
+        </div>
+        
+        <dl class="tabs contained">
+            <dd class="active"><a href="#description">Description</a></dd>
+            <dd><a href="#reviews">Reviews</a></dd>
+            <dd><a href="#profile">Profile</a></dd>
+        </dl>
+        <ul class="tabs-content contained">
+            <li class="active" id="simpleContained1Tab"><v65:product:description></v65:product:description></li>
+            <li id="reviews"><v65:product:reviewStats></v65:product:reviewStats><v65:product:reviews></v65:product:reviews></li>
+            <li id="profile"><v65:wine:profile></v65:wine:profile></li>
+        </ul>
+    </div>
+
+    <div class="four columns pull-eight">
+        <v65:product:photo showPhoto="1"></v65:product:photo>
+        <v65:wine:specs></v65:wine:specs>
+    </div>
+</div>
+
+<div class="row">
+    <div class="twelve columns">
+        <v65:product:relatedProducts></v65:product:relatedProducts>
+    </div>
+</div>
