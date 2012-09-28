@@ -8,13 +8,7 @@
     $('.primary-links > ul ul').addClass('flyout');
     $('.primary-links > ul ul').parent().addClass('has-flyout text-left');
     $('.primary-links .flyout').parent().find('a:first').after('<a href="#" class="flyout-toggle"><span> </span></a>');
-  
-    // Remove Vertical Nav Sidebar if there is no child pages
-    if ($('.sidebar-nav .nav-bar li').length > 0) {
-    } else {
-    $('.sidebar-nav').remove();
-    };
-    
+
     // Add "Back to Top" link in the footer
     $('.page-footer .nav-bar > li:first-child').before('<li><a href="#">Back to Top</a></li>');
     
