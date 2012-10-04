@@ -51,13 +51,10 @@
     $('.v65-productWrapper').addClass('row');
     $('.v65-product-leftCol').addClass('three columns pull-nine');
     $('.v65-product-rightCol').addClass('nine columns push-three').prependTo('.v65-productWrapper');
-    //$('.v65-wine-specs-title').wrap('<h2 class="wine-specs-title" />').contents().unwrap();
     $('.v65-product-attributeLabel, .v65-recipe-attributeLabel').wrap('<h6 class="attribute-label" />').contents().unwrap();
     $('.v65-product-attributeValue, .v65-recipe-attributeValue').wrap('<p />').contents().unwrap();
     $('#v65-addProductReview').removeAttr('id').addClass('add-product-review');
     $('.v65-product-availability div').wrap('<h4 />').contents().unwrap();
-    //$('.v65-wine-profile-title').wrap('<h2 class="wine-profile-title" />').contents().unwrap();
-    //$('.v65-product-reviews-title').wrap('<h2 class="wine-reviews-title" />').contents().unwrap();
       
     $('.v65-wine-profile').before('<div class="product-tabs"><dl class="tabs contained"> <dd class="active"><a href="#specs">Specs</a></dd> <dd><a href="#profile">Profile</a></dd> <dd><a href="#reviews">Reviews</a></dd> </dl> <ul class="tabs-content contained"> <li class="active" id="specsTab"></li> <li id="profileTab"></li> <li id="reviewsTab"></li> </ul></div>');
     $('.v65-productDrilldown-specs').appendTo('#specsTab');
@@ -67,7 +64,6 @@
     
     $('.v65-productWrapper .v65-product-photo').addClass('hide-for-small');
     $('.v65-productWrapper .v65-product-photo').clone().prependTo('.v65-product-rightCol').addClass('show-for-small').removeClass('hide-for-small');
-    $('.block-grid .v65-product-addToCart').remove();
     
     // General
     $('.v65-customForm').removeClass().addClass('custom-form');
@@ -135,14 +131,11 @@
     $('#v65-signUpClubSummaryWrapper, #v65-checkoutCartSummaryWrapper').removeAttr('id').addClass('four columns push-eight').wrapInner('<div class="panel" />');
     $('#v65-clubFormWrapper').removeAttr('id').addClass('row');
     $('#v65-fieldset-shippingInfo').removeAttr('id').addClass('shipping-info');
-    $('v65-fieldset-shippingOptions').removeAttr('id').addClass('shipping-options');
+    $('#v65-fieldset-shippingOptions').removeAttr('id').addClass('shipping-options');
     $('#v65-fieldset-usernamePassword').removeAttr('id').addClass('username-password');
     $('.floatRight').removeClass().addClass('text-right');
     $('input#Username, input#Password, input#ConfirmPassword').removeAttr('id').removeAttr('style');
     $('#v65-checkoutCartSummaryMini, #v65-checkCartSummaryMoreOptions, #v65-couponFormWrapper, #v65-giftCardFormWrapper, #v65-GiftCode').removeAttr('id');
-    //$('#v65-cardExpiryMo').parent().addClass('row');
-    //$('#v65-cardExpiryMo').removeAttr('id').wrap('<div class="six columns" />');
-    //$('#v65-cardExpiryYr').removeAttr('id').wrap('<div class="six columns" />');
     
     // Alerts
     $('.alert').removeClass().addClass('alert-box alert');
