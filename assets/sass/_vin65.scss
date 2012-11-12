@@ -139,8 +139,25 @@ select,
   margin-bottom: 15px;
 }
 
+input[name="Username"] {
+    @extend input[type="text"];
+}
+
 
 /* Cart */
+
+#v65-continueOrder {
+    width: inherit;
+}
+
+.v65-product-addToCart fieldset {
+    padding: 10px;
+}
+
+.cart fieldset {
+    max-width: 120px;
+    padding-top: 10px;
+}
 
 @media only screen and (max-width: 47.999em) {
   .logo {
