@@ -10,14 +10,8 @@
     $('.primary-links .flyout').parent().find('a:first').after('<a href="#" class="flyout-toggle"><span> </span></a>');
 
     // Add "Back to Top" link in the footer
-    $('.page-footer .nav-bar > li:first-child').before('<li><a href="#">Back to Top</a></li>');
-    
-    // Move Footer Cart to navigation
-    $('.page-footer .nav-bar').append('<li class="nav-cart cart-link"></li><li class="nav-account"></li><li class="nav-login"></li>');
-    $('.page-footer #v65-toggleModalCart').appendTo($('.nav-cart'));
-    $('.page-footer #v65-modalLoginLink-YourAccount').appendTo($('.nav-account'));
-    $('.page-footer #v65-modalLoginLink-Login').appendTo($('.nav-login'));
-  
+    //$('.page-footer .nav-bar > li:first-child').before('<li><a href="#">Back to Top</a></li>');
+      
     // Remove Breadcrumb container if there is no breadcrumb
     if ($('.breadcrumb-container li').length > 0) {
     } else {
@@ -30,10 +24,10 @@
     $('.breadcrumb-container .current').wrapInner('<span />');
     
     // Button classes
-    $('a.linkBtn, a.modalLinkBtn, button.modalBtn, button.defaultBtn').removeClass().addClass('small button');
+    /*$('a.linkBtn, a.modalLinkBtn, button.modalBtn, button.defaultBtn').removeClass().addClass('small button');
     $('a.linkAltBtn, button.altBtn, a.modalLinkAltBtn, button.altModalBtn').removeClass().addClass('small button secondary');
     $('a.largeLinkBtn, button.largeBtn').removeClass().addClass('large button');
-    $('button.altLargeBtn').removeClass().addClass('large button secondary');
+    $('button.altLargeBtn').removeClass().addClass('large button secondary');*/
     
     // Remove silly button spans
     $(".button span").contents().unwrap();
@@ -66,11 +60,11 @@
     $('.v65-productWrapper .v65-product-photo').clone().prependTo('.v65-product-rightCol').addClass('show-for-small').removeClass('hide-for-small');
     
     // General
-    $('.v65-customForm').removeClass().addClass('custom-form');
+    $('.v65-customForm').addClass('custom-form');
     $('.sidebar-nav > ul').addClass('nav-bar vertical');
     $('.v65-leftSelected, .v65-pageAParent').parent().addClass('active');
     $('.footer-links ul').addClass('link-list right');
-    $('.cart-link a').attr('href', '/index.cfm?method=cart.showCart');
+    //$('.cart-link a').attr('href', '/index.cfm?method=cart.showCart');
     $('article > p:first').addClass('lead');
 
     // Pagination
@@ -158,7 +152,6 @@
     $('.post-wrapper').after('<hr />');
     
     // General Forms
-    $('.v65-form').removeClass('v65-form');
     $('input').removeAttr('style');
     
     // Cart
@@ -179,7 +172,7 @@
     $('ul .pod').wrap('<li class="pod" />');
     $('.v65-podDescription').removeClass().addClass('pod-description');
     $('.v65-podTitle').wrapInner('<h5 class="pod-title" />').contents().unwrap();
-    $('#v65-subscribeWidget').removeAttr('id').addClass('subscribe-widget');
+    $('#v65-subscribeWidget').addClass('subscribe-widget');
 
     // Account
     $('#v65-memberFormWrapper').removeAttr('id').addClass('member-form');

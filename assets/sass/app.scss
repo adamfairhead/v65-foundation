@@ -1,52 +1,5 @@
 @import "settings";
 @import "foundation";
 @import "vin65";
+@import "foundation/components/modules/offcanvas";
 
-/* Sassy */
-
-@mixin ir {
-  text-align: left;
-  text-indent: -999em;
-  display: block;
-}
-
-
-/* Header */
-
-.page-header {
-  padding: 20px 0;
-}
-
-.logo img {
-  margin-top: 7px;
-}
-
-
-/* Navigation */
-
-.navlink {
-  @include ir;
-  height: 44px;
-  width: 44px;
-  float: right;
-}
-.no-svg .navlink {
-  background: url('../images/ui/navlink.png') center no-repeat;
-}
-.svg .navlink {
-  background: url('../images/ui/navlink.svg') center no-repeat;
-}
-
-.tertiary-links {
-  position: absolute;
-  top: 12px;
-  width: 100%;
-  text-align: right;
-}
-
-
-/* Page Footer */
-
-.page-footer {
-  font-size: .8em;
-}
