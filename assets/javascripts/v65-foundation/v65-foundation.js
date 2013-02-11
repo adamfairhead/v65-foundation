@@ -129,12 +129,18 @@
     $('#v65-fieldset-usernamePassword').removeAttr('id').addClass('username-password');
     $('.floatRight').removeClass().addClass('text-right');
     $('input#Username, input#Password, input#ConfirmPassword').removeAttr('id').removeAttr('style');
-    $('#v65-checkoutCartSummaryMini, #v65-checkCartSummaryMoreOptions, #v65-couponFormWrapper, #v65-giftCardFormWrapper, #v65-GiftCode').removeAttr('id');
+    $('#v65-checkoutCartSummaryMini, #v65-checkCartSummaryMoreOptions, #v65-giftCardFormWrapper, #v65-GiftCode').removeAttr('id');
     
     // Alerts
     $('.alert').removeClass().addClass('alert-box alert');
     $('.alert-box').append('<a href="" class="close">&times;</a>')
-    $('td.alert-box').remove();
+    
+    $('td.alert-box').wrap('<div class="alert-box alert" />');
+    $('td.alert-box').contents().unwrap();
+    $('tr .alert-box').parent().contents().unwrap();
+    $('.alert-box').insertBefore('table');
+    
+    
     
     // Events
     $('.v65-calendarList-Month').wrap('<h2 />').contents().unwrap();
@@ -155,17 +161,15 @@
     $('input').removeAttr('style');
     
     // Cart
-    $('#v65-CouponCode, #v65-cartShippingStates, #v65-cartSubtotal').removeAttr('id');
-    $('#v65-cartCheckOutCoupons').removeAttr('id').addClass('four columns coupons');
+    $('#v65-cartCheckOutCoupons').addClass('four columns coupons');
     $('.v65-cartCheckOutButtons').removeClass().addClass('checkout eight columns text-right');
     $('.v65-cartItemAmount, .v65-cartItem, .v65-cartItemDescription, .v65-cartItemImage, .v65-cartTax').removeClass();
-    $('#v65-cartTable').removeAttr('id').addClass('cart');
-    $('#v65-cartTotal').removeAttr('id').addClass('bold');
-    $('#v65-cartHeader').removeAttr('id').addClass('row cart-header');
-    $('#v65-cartFooter').removeAttr('id').addClass('row cart-footer');
-    $('#v65-cartPaymentOptions').removeAttr('id').addClass('four columns payment-options');
+    $('#v65-cartTable').addClass('cart');
+    $('#v65-cartTotal').addClass('bold');
+    $('#v65-cartHeader').addClass('row cart-header');
+    $('#v65-cartFooter').addClass('row cart-footer');
+    $('#v65-cartPaymentOptions').addClass('four columns payment-options');
     $('.coupons .row').find(' ').remove();
-    $('.coupons fieldset div');
     
     // Pods
     $('.v65-pod').wrapInner('<div class="pod panel"></div>').contents().unwrap();
